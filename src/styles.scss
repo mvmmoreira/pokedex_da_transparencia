@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@use "./config_scss/variable.scss";
-@use "./config_scss/reset.scss";
-@use "./config_scss/ren-cal.scss";
+@import "./config_scss/variable.scss";
+@import "./config_scss/reset.scss";
+@import "./config_scss/ren-cal.scss";
 
 html{
     font-family: 'Roboto', sans-serif;
