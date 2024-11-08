@@ -6,14 +6,12 @@ import { Injectable } from '@angular/core';
 })
 export class CandidatoApiService {
 
-  private _httpClient: HttpClient
 
-  constructor(httpClient: HttpClient) {
-      this._httpClient = httpClient;
+  constructor(private httpClient: HttpClient) {
    }
 
   obtercandidato(){
-    9
+    
   }
 
 
