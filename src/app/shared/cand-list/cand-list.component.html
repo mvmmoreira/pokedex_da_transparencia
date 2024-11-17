@@ -1,16 +1,17 @@
-<a class="candidato">
+
+<a class="candidato" *ngfor="let candidato of candidatos">
 <section class="candidato__status">
     <h2>
-        Dr.Vinicius
+        {{candidato.id}}
     </h2>
     
     <ul>
-        <li>Partido</li>
-        <li>numero</li>
+        <li>{{candidato.nome}}</li>
+        <li>{{candidato.partido}}</li>
     </ul>
 </section>
 
 <section class="candidato__image">
-    <img src="assets/bg/foto.jpeg" alt="Dr.Vinicius">
+    <img src={{candidato.url}} alt="Dr.Vinicius">
 </section>
 </a>
