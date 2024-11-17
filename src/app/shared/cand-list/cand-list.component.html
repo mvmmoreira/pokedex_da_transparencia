@@ -1,5 +1,6 @@
 
-<a class="candidato" *ngfor="let candidato of candidatos">
+<ng-template *ngFor="let candidato of candidatos">
+<a class="candidato" >
 <section class="candidato__status">
     <h2>
         {{candidato.id}}
@@ -15,3 +16,4 @@
     <img src={{candidato.url}} alt="Dr.Vinicius">
 </section>
 </a>
+</ng-template>

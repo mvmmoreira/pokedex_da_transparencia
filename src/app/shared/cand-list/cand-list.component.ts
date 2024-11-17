@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { CandidatoService } from '../../services/candidato.service';
 import { Candidato } from '../../models/candidato.model';
-import { CommonModule, NgFor, NgForOf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'cand-list',
   standalone: true,
-  imports: [NgForOf,
+  imports: 
+  [
     CommonModule
   ],
   templateUrl: './cand-list.component.html',
