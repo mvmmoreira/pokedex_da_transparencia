@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CandidatoService } from '../../services/candidato.service';
+import { Candidato } from '../../models/candidato.model';
 
 @Component({
   selector: 'cand-list',
@@ -9,4 +11,13 @@ import { Component } from '@angular/core';
 })
 export class CandListComponent {
 
+  candidatos: Candidato[] = []
+
+  constructor(private CandidatoService: CandidatoService){
+    console.log()
+  }  
+
+  obterCandidatoCadastrado(){
+
+  }
 }

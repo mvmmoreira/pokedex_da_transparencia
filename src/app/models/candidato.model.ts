@@ -1,4 +1,4 @@
-export interface CandidatoApi {
+export interface Candidato{
     id: number,
     nome: string,
     nascimento: string,
@@ -7,9 +7,9 @@ export interface CandidatoApi {
     partido: string,
     url: string,
     orcamentoGasto: number,
-    numeroEleicao: number,
+    numeroEleicao:number,
     limiteLegalDeGasto: number,
-    candidatoAReeleicao: false,
+    candidatoAReeleicao: string,
     estadoCivil: string,
     raca: string,
     grauDeInstrucao: string,
