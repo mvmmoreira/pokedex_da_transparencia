@@ -9,7 +9,7 @@ import { Candidato } from "../models/candidato.model";
 
 export class CandidatoService{
 
-    private  ApiUrl: string = "http://localhost:3000/candidato";
+    private  ApiUrl: string = "http://localhost:3000/candidatos";
 
     constructor(private httpClient: HttpClient){     
     }

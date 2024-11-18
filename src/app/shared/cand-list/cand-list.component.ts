@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CandidatoService } from '../../services/candidato.service';
 import { Candidato } from '../../models/candidato.model';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor, NgForOf } from '@angular/common';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'cand-list',
@@ -15,14 +16,16 @@ import { CommonModule } from '@angular/common';
 })
 export class CandListComponent {
 
-  candidatos: Candidato[] = []
+  //candidatos: Candidato[] = []
+  candidatos$ = new Observable<Candidato[]>();
 
   constructor(private CandidatoService: CandidatoService){
-    this.obterCandidatoCadastrado
+    this.obterCandidatoCadastrado();
   }  
 
   obterCandidatoCadastrado(){
-    this.CandidatoService.obterCandidato()
-      .subscribe(candidatos => this.candidatos =candidatos)
+   // this.CandidatoService.obterCandidato()
+    //  .subscribe(candidatos => this.candidatos = candidatos)
+    this.candidatos$ = this.CandidatoService.obterCandidato();
   }
 }
