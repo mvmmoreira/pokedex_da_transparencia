@@ -1,6 +1,6 @@
 
-<div *ngFor="let candidato of candidatos$ |async">
-<a class="candidato" >
+
+<a class="candidato" *ngFor="let candidato of candidatos$ |async">
 <section class="candidato__status">
     <h2>
         {{candidato.id}}
@@ -16,4 +16,4 @@
     <img [src]="candidato.url" alt="Dr.Vinicius">
 </section>
 </a>
-</div>
+
