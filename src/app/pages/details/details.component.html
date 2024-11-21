@@ -1,1 +1,66 @@
+<!-- Header -->
+<dex-header></dex-header>
 
+<main>
+
+    <section class="candidato__names">
+      <h1 class="slideInLeft">{{candidato.nome}}</h1>
+      <h2 class="slideInRight">{{candidato.partido}}</h2>
+    </section>
+
+    <section class="candidato__status">
+      <img
+        [src]="candidato.url"
+        [alt]="candidato.nome"
+        class="slideInDown"
+      >
+
+      <article class="candidato__status__statistics fadeIn">
+        <section>
+          <h3>Estatísticas</h3>
+
+          <ol>
+            <li>
+                numero de candidatura
+
+              <strong>
+                {{ candidato.numeroEleicao }}
+              </strong>
+            </li>
+            <li>
+                Candidato a Reeleição
+
+              <strong>
+                {{ candidato.numeroEleicao }}
+              </strong>
+            </li>
+            <li>
+                Limite Legal de gastos
+
+              <strong>
+                {{ candidato.numeroEleicao }}
+              </strong>
+            </li>
+            <li>
+                Limite Legal de Gastos
+
+              <strong>
+                {{ candidato.numeroEleicao }}
+              </strong>
+            </li>
+            <li>
+                Orçamento Gasto
+
+              <strong>
+                {{ candidato.numeroEleicao }}
+              </strong>
+            </li>
+          </ol>
+        </section>
+
+        <a [routerLink]="['']" class="btn btn__secondary">
+          Voltar
+        </a>
+      </article>
+    </section>
+</main>

@@ -1,19 +1,19 @@
+<cand-search ></cand-search>
+<section class="listagem">
+    <a class="candidato" *ngFor="let candidato of candidatos$ |async" [routerLink]="['/details', candidato.id]">
+    <section class="candidato__status">
+        <h2>
+            {{candidato.nome}}
+        </h2>
+        
+        <ul>
+            <li>{{candidato.partido}}</li>
+            <li>{{candidato.numeroEleicao}}</li>
+        </ul>
+    </section>
 
-
-<a class="candidato" *ngFor="let candidato of candidatos$ |async">
-<section class="candidato__status">
-    <h2>
-        {{candidato.id}}
-    </h2>
-    
-    <ul>
-        <li>{{candidato.nome}}</li>
-        <li>{{candidato.partido}}</li>
-    </ul>
+    <section class="candidato__image">
+        <img [src]="candidato.url" alt="Dr.Vinicius">
+    </section>
+    </a>
 </section>
-
-<section class="candidato__image">
-    <img [src]="candidato.url" alt="Dr.Vinicius">
-</section>
-</a>
-

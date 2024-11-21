@@ -1,5 +1,7 @@
 @import '../../../config_scss/ren-cal.scss';
+
 :host{
+.listagem{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,13 +21,15 @@
         
         border-radius: rem-calc(10);
         
+        text-decoration: none;
+        color: black;
+
         &__status{
             h2{
-                font-size: rem-calc(22);
+                font-size: rem-calc(18);
                 font-style: italic;
                 font-weight: 700;
                 margin-bottom: rem-calc(10);
-                text-transform: capitalize;
             }
 
             ul{
@@ -37,12 +41,12 @@
                     font-size: rem-calc(10);
                     
                     display: flex;
-                    justify-content: center;
+                    justify-content: baseline;
                     align-items: center;
 
                     border-radius: rem-calc(50);
 
-                    width: rem-calc(60);
+                    width: rem-calc(75);
                     margin-bottom: rem-calc(5);
                 }
             }
@@ -54,7 +58,7 @@
             align-items: center;
             justify-content: center;
 
-            height: rem-calc(90);
+            height: rem-calc(70);
             width: rem-calc(110);
 
             right: rem-calc(20);
@@ -63,8 +67,9 @@
             background: url('../../../assets/bg/background_list_candidato.svg') no-repeat;
 
             img{
-                width: rem-calc(90);
+                width: rem-calc(70);
             }
         }
     }
+}
 }

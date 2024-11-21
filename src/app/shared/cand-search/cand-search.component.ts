@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+
 
 @Component({
   selector: 'cand-search',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './cand-search.component.scss'
 })
 export class CandSearchComponent {
+  @Output() public emmitSearch: EventEmitter<any> = new EventEmitter();
 
+  public search(value:any){
+    this.emmitSearch.emit(value);
+  }
 }
