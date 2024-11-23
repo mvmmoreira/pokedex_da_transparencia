@@ -1,0 +1,46 @@
+:host{
+    main {
+        #content__box {
+            width: 500;
+            height: 500px;
+            border: 10px solid lightblue;
+            border-radius: 10px;
+      
+            background: red;
+            display: flex; /* Flex container */
+            flex-direction: row; /* Elementos lado a lado */
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+
+        #candidato__info{
+            width: 250px;
+            height: 100%;
+            background-color: aqua;
+        }
+
+        #candidato__list {
+            width: 250px;
+            height: 480px;
+            background-color: yellow;
+          
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto; /* Adicionado para rolagem vertical se necessário */
+            padding: 10px; /* Para espaçamento interno */
+          }
+          
+          .candidato__item {
+            margin-bottom: 10px;
+          }
+
+          .candidato__name{
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 5px;
+            padding: 5px;
+            background-color: white;
+            cursor: pointer;
+          }
+    }
+}

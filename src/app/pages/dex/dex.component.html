@@ -1,0 +1,23 @@
+<main>
+    <div id="content__box">
+        <!--lado esquerdo display-->
+        <div id="candidato__info" *ngIf="candidatoSelecionado">
+            <img id="candidado__img" [src]="candidatoSelecionado.url" alt="">
+            <div id="candidato_status">
+                <span class="type__box__num">{{candidatoSelecionado.numeroEleicao}} </span><span class="type__box__cargo">{{candidatoSelecionado.nome}}</span>
+            </div>
+            <br>
+            <div id="candidado__descricao">O candidato {{candidatoSelecionado.nome}} do {{candidatoSelecionado.partido}} tem um limite de gastos de {{candidatoSelecionado.limiteLegalDeGasto}} e usou {{candidatoSelecionado.orcamentoGasto}} do orçamento disponivél</div>
+        </div>
+        <!--lado direito lista-->
+        <div id="candidato__list">
+            <div *ngFor="let candidato of candidatos$ | async" 
+            class="candidato__item" 
+            (click)="selecionarCandidato(candidato)"
+            [class.active]="candidatoSelecionado?.id === candidato.id">
+            
+                <div id="candidato.id" class="candidato__name">{{candidato.id}}. {{candidato.nome}}</div>
+            </div>
+        </div>
+    </div>
+</main>

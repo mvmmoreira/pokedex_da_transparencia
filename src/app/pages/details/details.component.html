@@ -28,31 +28,31 @@
               </strong>
             </li>
             <li>
-                Candidato a Reeleição
+                Partido
 
               <strong>
-                {{ candidato.numeroEleicao }}
+                {{ candidato.partido }}
               </strong>
             </li>
             <li>
-                Limite Legal de gastos
+                Coligação
 
               <strong>
-                {{ candidato.numeroEleicao }}
+                {{ candidato.coligacao }}
               </strong>
             </li>
             <li>
-                Limite Legal de Gastos
+                Limite de gastos
 
               <strong>
-                {{ candidato.numeroEleicao }}
+                {{ candidato.limiteLegalDeGasto | number :'1.2-2' }}
               </strong>
             </li>
             <li>
                 Orçamento Gasto
 
               <strong>
-                {{ candidato.numeroEleicao }}
+                {{ candidato.orcamentoGasto | number :'1.2-2' }}
               </strong>
             </li>
           </ol>
