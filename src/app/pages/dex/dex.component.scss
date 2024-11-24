@@ -11,6 +11,10 @@
             flex-direction: row; /* Elementos lado a lado */
             margin: 0 auto;
             margin-top: 60px;
+
+            //background-color: lightgreen;
+            background: url("/assets/dex3.png") no-repeat center center;
+            background-size: cover;
         }
 
         #candidato__info{
@@ -36,6 +40,9 @@
         .type__box{
           border: 1px solid black;
           border-radius: 10px;
+          background-color: white;
+          margin-left: 5px;
+          padding: 6px;
           
 
         }

@@ -4,7 +4,7 @@
         <div id="candidato__info" *ngIf="candidatoSelecionado">
             <img id="candidado__img" [src]="candidatoSelecionado.url" alt="">
             <div id="candidato_status">
-                <span class="type__box num">{{candidatoSelecionado.numeroEleicao}} </span><span class="type__box cargo">{{candidatoSelecionado.nome}}</span>
+                <span class="type__box num">{{candidatoSelecionado.numeroEleicao}} </span><span class="type__box cargo">{{candidatoSelecionado.partido}}</span>
             </div>
             <br>
             <div id="candidado__descricao">O candidato {{candidatoSelecionado.nome}} do {{candidatoSelecionado.partido}} tem um limite de gastos de {{candidatoSelecionado.limiteLegalDeGasto | number:'1.2-2'}} e usou {{candidatoSelecionado.orcamentoGasto | number:'1.2-2'}} do orçamento disponivél</div>
