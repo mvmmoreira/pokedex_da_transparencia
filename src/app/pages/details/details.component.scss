@@ -115,5 +115,22 @@
 				}
 			}
 		}
+		.btn__secondary{
+		  text-decoration: none; /* Remove sublinhado */
+          color: black; /* Cor do texto */
+          font-size: 16px;
+          font-weight: bold;
+          padding: 10px 20px;
+          border: 2px solid transparent; /* Transição para hover */
+          border-radius: 25px; /* Botão arredondado */
+          transition: all 0.3s ease;
+  
+          /* Estilo inicial */
+          &:hover {
+            background-color: lightblue; /* Fundo branco */
+            color: #2a75bb; /* Texto azul */
+            border-color: lightcoral; /* Borda branca */
+        }
+		}
 	}
 }
