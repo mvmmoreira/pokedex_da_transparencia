@@ -1,12 +1,12 @@
 :host{
     main {
         #content__box {
-            width: 500;
+            width: 500px;
             height: 500px;
             border: 10px solid lightblue;
             border-radius: 10px;
       
-            background: red;
+            //background: red;
             display: flex; /* Flex container */
             flex-direction: row; /* Elementos lado a lado */
             margin: 0 auto;
@@ -16,13 +16,48 @@
         #candidato__info{
             width: 250px;
             height: 100%;
-            background-color: aqua;
+            //background-color: aqua;
+            text-align: center;
+        }
+
+        #candidato__info img{
+          width: 200px;
+          height: 245px;
+          border: 1px solid black;
+          border-radius: 10px;
+          margin-top: 20px;
+          background-color: white;
+        }
+
+        #candidato_status{
+          margin-top: 10px;
+        }
+
+        .type__box{
+          border: 1px solid black;
+          border-radius: 10px;
+          
+
+        }
+
+        #candidado__descricao{
+          width: 230px;
+          height: 100px;
+          background-color: white;
+          border: 1px solid black;
+          border-radius: 10px;
+
+          margin: 0 auto;
+          margin-top: 10px;
+          padding: 2px;
+          font-size: 18px;
+          overflow: auto;
         }
 
         #candidato__list {
             width: 250px;
             height: 480px;
-            background-color: yellow;
+            //background-color: yellow;
           
             display: flex;
             flex-direction: column;

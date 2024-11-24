@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { DexHeaderComponent } from '../../shared/dex-header/dex-header.component';
 import { CandSearchComponent } from '../../shared/cand-search/cand-search.component';
 import { CandListComponent } from '../../shared/cand-list/cand-list.component';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,8 @@ import { CandListComponent } from '../../shared/cand-list/cand-list.component';
   imports: [
     CandListComponent ,
     CandSearchComponent,
-    DexHeaderComponent
+    DexHeaderComponent,
+    RouterModule
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
